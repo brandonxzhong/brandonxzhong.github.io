@@ -1,0 +1,487 @@
+/** general css **/
+html {
+  height: 100%;
+}
+body {
+  margin:0px;
+  min-width: 1024px;
+  min-height: 768px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* min-conditions: height = 72px */
+.header {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  min-width: 1024px;
+  width: 100%;
+  height: 72px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+  padding-right: 21px;
+  background-color: white;
+  z-index: 4;
+}
+
+/* min-conditions: padding-left/right = 21px */
+.button {
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 21px;
+  padding-right: 21px;
+  background-color: white;
+  transition: background-color .2s;
+}
+
+.button-buffer {
+  width: 21px;
+  height: 100%;
+  background-color: white;
+}
+
+.button-text {
+  width: 100%;
+  height: 100%;
+  font-family: Cormorant Garamond;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;/* identical to box height */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.15em;
+  color: #000000;
+}
+
+.button:hover {
+  background-color: #D0D0D0;
+  cursor: pointer;
+}
+
+#page-window {
+  position: absolute;
+  top: 72px;
+  left: 0%;
+  overflow: hidden;
+  height: 696px;
+  min-width: 1024px;
+  width: 100%;
+}
+
+#page-container {
+  min-width: 2048px;
+  width: 200%;
+  transition: .5s;
+  position: absolute;
+  left: 0;
+  display: flex;
+}
+
+.page-section {
+  position: relative;
+  height: 696px;
+  min-width: 1024px;
+  width: 100%;
+}
+
+/** about me page
+**
+**
+**
+**/
+
+#about-me-page .main-content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: 624px;
+  padding-top: 72px;
+}
+
+#about-me-page .profile-pic-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-me-page .profile-pic-circle {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-me-page .about-me-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#about-me-page .text-container {
+  height: 100%;
+  width: 100%;
+  padding-right: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-me-page .title-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+#about-me-page .title-text {
+  font-family: Cormorant Garamond;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+#about-me-page .description-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+#about-me-page .description-text {
+  font-family: Cormorant Garamond;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.15em;
+  color: #000000;
+}
+
+#about-me-page .links-container {
+  height: 84px;
+  width: 420px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: space-between;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+#about-me-page .link {
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-me-page .link a {
+  font-family: Cormorant Garamond;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.15em;
+  color: #000000;
+  transition: color .2s;
+}
+
+#about-me-page .link a:hover {
+  color: #ABABAB;
+}
+
+/**projects page
+**
+**
+**
+**/
+
+#projects-page .main-content-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 696px;
+}
+
+#projects-page .main-subcontent-container {
+  height: 580px;
+  width: 852px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+}
+
+#projects-page .row {
+  width: 100%;
+  height: 261px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: space-between;
+}
+
+#projects-page .row-buffer {
+  width: 100%;
+  height: 58px;
+}
+
+#projects-page .project-container {
+  width: 391px;
+  height: 261px;
+  position: relative;
+}
+
+#projects-page .project-picture {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  transition: opacity .2s;
+}
+
+#projects-page .project-description {
+  padding-left: 16px;
+  padding-right: 16px;
+  position: absolute;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+}
+
+#projects-page .project-container:hover {
+  cursor: pointer;
+}
+
+#projects-page .project-container:hover .project-picture {
+  opacity: .4;
+}
+
+#projects-page .project-container:hover .project-description {
+  visibility: visible;
+  opacity: 1;
+}
+
+#projects-page .project-title {
+  width: 100%;
+  height: 44px;
+  font-family: Cormorant Garamond;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.15em;
+  color: #000000;
+}
+
+#projects-page .project-date {
+  width: 100%;
+  height: 34px;
+  font-family: Cormorant Garamond;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.15em;
+  color: #000000;
+  border-bottom: 2px black solid;
+}
+
+#projects-page .project-blurb {
+  font-family: Cormorant Garamond;
+  height: 183px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  letter-spacing: 0.15em;
+  color: #000000;
+}
+
+
+
+#projects-page #carousel-container {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  background-color: grey;
+  height: 464px;
+  width: 768px;
+  overflow: hidden;
+}
+
+#projects-page #carousel-strip {
+  transition: 0.4s;
+  position: absolute;
+  left: 0;
+  display: flex;
+}
+
+#projects-page .carousel-section {
+  background-color: white;
+  position: relative;
+  height: 464px;
+  width: 768px;
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+  justify-content: space-between;
+}
+
+#projects-page .carousel-description {
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 352px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#projects-page .carousel-title {
+  width: 352px;
+  height: 52px;
+  font-family: Cormorant Garamond;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.15em;
+  color: #000000;
+}
+
+#projects-page .carousel-date {
+  width: 352px;
+  height: 32px;
+  font-family: Cormorant Garamond;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.15em;
+  color: #000000;
+}
+
+#projects-page .carousel-blurb {
+  padding-top: 32px;
+  width: 352px;
+  height: 380px;
+  font-family: Cormorant Garamond;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.15em;
+  color: #000000;
+  overflow-y: scroll;
+}
+
+#projects-page .carousel-image {
+  width: 384px;
+  height: 464px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#projects-page .carousel-image img {
+  width: 271px;
+  height: 181px;
+}
+
+#projects-page #left, #right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 3;
+}
+
+#projects-page #left {
+  left: calc(50% - 75vh);
+}
+
+#projects-page #right {
+  right: calc(50% - 75vh);
+}
+
+#projects-page #close {
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 3;
+}
+
+#projects-page #overlay {
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  height: 100%;
+  width: 150%;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+}

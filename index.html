@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="assets/script/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+</head>
+<body>
+	<!--- HEADER --->
+	<title>Brandon Zhong</title>
+	<link rel="icon" href="" type="image/icon type">
+	<div class="header">
+		<div class="button" id="aboutme">
+			<a class="button-text">About Me</a>
+		</div>
+		<div class="button" id="projects">
+			<a class="button-text">Projects</a>
+		</div>
+		<div class="button-buffer"></div>
+	</div>
+	<!--- PAGE WINDOW --->
+	<div id="page-window">
+		<div id="page-container">
+			<!--- ABOUT ME PAGE --->
+			<div class="page-section" id="about-me-page">
+				<div class="main-content-container">
+					<div class="profile-pic-container">
+						<div class="profile-pic-circle">
+							<img class="profile-pic" src="assets/img/profilepic.png"></img>
+						</div>
+					</div>
+					<div class="about-me-container">
+						<div class="text-container">
+							<div class="title-container">
+								<div class="title-text">About Me</div>
+							</div>
+							<div class="description-container">
+								<div class="description-text">
+									Lorem ipsum dolor sit amet,
+									consectetur adipiscing elit,
+									sed do eiusmod tempor incididunt
+									ut labore et dolore magna aliqua.
+									Felis donec et odio pellentesque
+									diam volutpat commodo.
+									<br><br>
+									Ac placerat
+									vestibulum lectus mauris ultrices
+									eros in cursus turpis. Enim ut sem
+									viverra aliquet eget. Condimentum
+									lacinia quis vel eros donec ac. Venenatis
+									tellus in metus vulputate eu scelerisque
+									felis imperdiet. Eget magna fermentum
+									iaculis eu non diam phasellus vestibulum.
+								</div>
+							</div>
+							<div class="links-container">
+								<div class="link" id="resume">
+									<a target="_blank" rel="noopener noreferrer" href="assets/file/Brandon Zhong - 2019 Resume.pdf">Resume</a>
+								</div>
+								<div class="link" id="github">
+									<a target="_blank" rel="noopener noreferrer" href="https://github.com/brandonxzhong">GitHub</a>
+								</div>
+								<div class="link" id="linkedin">
+									<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/brandon-zhong-1aa6b6167/">LinkedIn</a>
+								</div>
+								<div class="link" id="email">
+									<a href="mailto: brandonxzhong@berkeley.edu">Email</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--- PROJECTS PAGE --->
+			<div class="page-section" id="projects-page">
+			<div class="main-content-container">
+				<div class="main-subcontent-container">
+					<div class="row" id="0">
+		        <div class="project-container" id="0">
+		          <img class="project-picture" src="assets/img/cat.png"></img>
+		          <div class="project-description">
+		            <div class="project-title">Project Title</div>
+		            <div class="project-date">Month 00, 9999</div>
+		            <div class="project-blurb">
+		              Nunc lobortis mattis aliquam faucibus purus.
+		              Morbi non arcu risus quis varius quam quisque id.
+		              Justo nec ultrices dui sapien.
+		            </div>
+		          </div>
+		        </div>
+		        <div class="project-container" id="1">
+		          <img class="project-picture" src="assets/img/hat.png"></img>
+		          <div class="project-description">
+		            <div class="project-title">Project Title</div>
+		            <div class="project-date">Month 00, 9999</div>
+		            <div class="project-blurb">
+		              Nunc lobortis mattis aliquam faucibus purus.
+		              Morbi non arcu risus quis varius quam quisque id.
+		              Justo nec ultrices dui sapien.
+		            </div>
+		          </div>
+		        </div>
+					</div>
+					<div class="row" id="1">
+		        <div class="project-container" id="2">
+		          <img class="project-picture" src="assets/img/thicc.png"></img>
+		          <div class="project-description">
+		            <div class="project-title">Project Title</div>
+		            <div class="project-date">Month 00, 9999</div>
+		            <div class="project-blurb">
+		              Nunc lobortis mattis aliquam faucibus purus.
+		              Morbi non arcu risus quis varius quam quisque id.
+		              Justo nec ultrices dui sapien.
+		            </div>
+		          </div>
+		        </div>
+		        <div class="project-container" id="3">
+		          <img class="project-picture" src="assets/img/toomuchfluff.png"></img>
+		          <div class="project-description">
+		            <div class="project-title">Project Title</div>
+		            <div class="project-date">Month 00, 9999</div>
+		            <div class="project-blurb">
+		              Nunc lobortis mattis aliquam faucibus purus.
+		              Morbi non arcu risus quis varius quam quisque id.
+		              Justo nec ultrices dui sapien.
+		            </div>
+		          </div>
+		        </div>
+					</div>
+		    </div>
+			</div>
+			<div id="lightbox">
+				<div id="overlay"></div>
+				<div id="close"><img src="assets/img/exit.png"></img></div>
+				<div id="left"><img src="assets/img/left-arrow.png"></img></div>
+				<div id="carousel-container">
+					<div id="carousel-strip">
+						<div class="carousel-section">
+							<div class="carousel-image">
+								<img src="assets/img/cat.png"></img>
+							</div>
+							<div class="carousel-description">
+								<div class="carousel-title">Project Title</div>
+								<div class="carousel-date">Month 00, 9999</div>
+								<div class="carousel-blurb">
+									Urna id volutpat lacus laoreet non curabitur
+									gravida arcu. Sit amet nulla facilisi morbi
+									tempus. Mauris pharetra et ultrices neque ornare
+									aenean euismod elementum. Tempus egestas sed sed
+									risus pretium quam vulputate dignissim suspendisse.
+									Id aliquet risus feugiat in ante metus dictum.
+									Quis ipsum suspendisse ultrices gravida dictum.
+									Egestas egestas fringilla phasellus faucibus
+									scelerisque eleifend donec pretium. Enim neque
+									volutpat ac tincidunt vitae semper quis lectus nulla.
+									Lacinia quis vel eros donec ac odio tempor orci dapibus.
+								</div>
+							</div>
+						</div>
+						<div class="carousel-section">
+							<div class="carousel-image">
+								<img src="assets/img/hat.png"></img>
+							</div>
+							<div class="carousel-description">
+								<div class="carousel-title">Project Title</div>
+								<div class="carousel-date">Month 00, 9999</div>
+								<div class="carousel-blurb">
+									Urna id volutpat lacus laoreet non curabitur
+									gravida arcu. Sit amet nulla facilisi morbi
+									tempus. Mauris pharetra et ultrices neque ornare
+									aenean euismod elementum. Tempus egestas sed sed
+									risus pretium quam vulputate dignissim suspendisse.
+									Id aliquet risus feugiat in ante metus dictum.
+									Quis ipsum suspendisse ultrices gravida dictum.
+									Egestas egestas fringilla phasellus faucibus
+									scelerisque eleifend donec pretium. Enim neque
+									volutpat ac tincidunt vitae semper quis lectus nulla.
+									Lacinia quis vel eros donec ac odio tempor orci dapibus.
+								</div>
+							</div>
+						</div>
+						<div class="carousel-section">
+							<div class="carousel-image">
+								<img src="assets/img/thicc.png"></img>
+							</div>
+							<div class="carousel-description">
+								<div class="carousel-title">Project Title</div>
+								<div class="carousel-date">Month 00, 9999</div>
+								<div class="carousel-blurb">
+									Urna id volutpat lacus laoreet non curabitur
+									gravida arcu. Sit amet nulla facilisi morbi
+									tempus. Mauris pharetra et ultrices neque ornare
+									aenean euismod elementum. Tempus egestas sed sed
+									risus pretium quam vulputate dignissim suspendisse.
+									Id aliquet risus feugiat in ante metus dictum.
+									Quis ipsum suspendisse ultrices gravida dictum.
+									Egestas egestas fringilla phasellus faucibus
+									scelerisque eleifend donec pretium. Enim neque
+									volutpat ac tincidunt vitae semper quis lectus nulla.
+									Lacinia quis vel eros donec ac odio tempor orci dapibus.
+								</div>
+							</div>
+						</div>
+						<div class="carousel-section">
+							<div class="carousel-image">
+								<img src="assets/img/toomuchfluff.png"></img>
+							</div>
+							<div class="carousel-description">
+								<div class="carousel-title">Project Title</div>
+								<div class="carousel-date">Month 00, 9999</div>
+								<div class="carousel-blurb">
+									Urna id volutpat lacus laoreet non curabitur
+									gravida arcu. Sit amet nulla facilisi morbi
+									tempus. Mauris pharetra et ultrices neque ornare
+									aenean euismod elementum. Tempus egestas sed sed
+									risus pretium quam vulputate dignissim suspendisse.
+									Id aliquet risus feugiat in ante metus dictum.
+									Quis ipsum suspendisse ultrices gravida dictum.
+									Egestas egestas fringilla phasellus faucibus
+									scelerisque eleifend donec pretium. Enim neque
+									volutpat ac tincidunt vitae semper quis lectus nulla.
+									Lacinia quis vel eros donec ac odio tempor orci dapibus.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="right"><img src="assets/img/right-arrow.png"></img></div>
+			</div>
+		</div>
+		</div>
+	</div>
+</body>
+</html>
